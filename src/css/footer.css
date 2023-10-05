@@ -37,6 +37,7 @@
   text-align: left;
   text-transform: uppercase;
   color: var(--white-color);
+  text-align: left;
 }
 
 .footer-links:active {
@@ -45,21 +46,14 @@
 
 .footer-links-list {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   gap: 25px 40px;
-  width: 280px;
-  height: 61px;
-  align-items: left;
+  max-width: 86%;
   justify-content: space-between;
 }
 
-.footer-links-list:nth-last-child(4) {
-  justify-content: space-between;
-}
-
-.footer-links-list:last-child {
-  text-align: left;
+.footer-links-item {
+  flex-basis: calc((100% - 40px) / 2);
 }
 
 .footer-links-item:nth-child(2) {
@@ -110,6 +104,15 @@
   .footer {
     background-size: 100vw 212px;
   }
+
+  .footer-title {
+    font-size: 34px;
+    line-height: 1.26;
+  }
+
+  .footer-links {
+    font-size: 11px;
+  }
 }
 
 /* TABLETS */
@@ -135,9 +138,13 @@
   .footer-links-list {
     display: flex;
     flex-wrap: nowrap;
-    width: auto;
+    max-width: 100%;
     gap: 0 25px;
     height: auto;
+  }
+
+  .footer-links-item {
+    flex-basis: initial;
   }
 
   .footer-links-item:nth-child(2) {
