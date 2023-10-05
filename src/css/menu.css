@@ -20,7 +20,7 @@
     color: var(--black-color);
     background-color: var(--yellow-color);
 
-    background-image: url("./img/menu/menu-bg-mobile.png");
+    background-image: url("../img/menu/menu-bg-mobile.png");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100% 251px;
@@ -32,7 +32,7 @@
 
 @media (min-resolution: 192dpi) {
     .menu {
-        background-image: url("./img/menu/menu-bg-mobile@2x.png");
+        background-image: url("../img/menu/menu-bg-mobile@2x.png");
     }
 }
 
@@ -40,14 +40,14 @@
     .menu {
         width: 380px;
 
-        background-image: url("./img/menu/menu-bg-tablet.png");
+        background-image: url("../img/menu/menu-bg-tablet.png");
         background-size: 100% 364px;
     }
 }
 
 @media (min-width: 768px) and (min-resolution: 192dpi) {
     .menu {
-        background-image: url("./img/menu/menu-bg-tablet@2x.png");
+        background-image: url("../img/menu/menu-bg-tablet@2x.png");
     }
 }
 
